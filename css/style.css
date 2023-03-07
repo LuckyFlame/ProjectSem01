@@ -9,6 +9,10 @@
     --cl-red: #FF0000;
     --cl-black: #000000;
     --cl-line: #d9d9d9;
+    --cl-blue: #1b00ff;
+    --cl-pink: #ffc0cb;
+    --cl-yellow: #ffff00;
+    --cl-sky-blue: #87ceeb;
     /* Font Family */
     --ff-poppins: 'Poppins', sans-serif;
 }
@@ -417,8 +421,38 @@ footer .section-links .copyright {
 }
 
 .section-feedback .map {
-    width: 100%;
+    position: relative;
+    width: auto;
     height: 45vh;
+}
+
+.section-feedback .r-feedback-second .img-block {
+    display: block;
+    text-align: center;
+}
+
+.section-feedback .r-feedback-second .img-block img {
+    width: 12rem;
+    height: auto;
+}
+
+.section-feedback .r-feedback-second .img-block h4 {
+    font-size: 1.10rem;
+}
+
+.section-feedback .r-feedback-second .get-socials a {
+    background-color: #edeeef;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 8px 14px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: 0.3s all;
+    font-size: 1.10rem;
+}
+
+.section-feedback .r-feedback-second .get-socials a:hover {
+    text-decoration: none;
+    background-color: #e4e6e9;
 }
 
 /* Media */
