@@ -20,3 +20,32 @@ buttonScroll.addEventListener("click", () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 });
+
+/* Other */
+
+function City() {
+
+}
+
+function Feedback() {
+
+}
+
+function Validate() {
+    
+}
+
+/* App */
+function App() {
+    switch (body) {
+        case "index" :
+
+            break;
+        default : 
+
+            break;
+    }
+}
+
+App();
+
