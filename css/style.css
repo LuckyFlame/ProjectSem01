@@ -22,6 +22,9 @@
     box-sizing: border-box;
 }
 
+textarea {
+    resize: none !important;
+}
 
 img, picture {
     max-width: 100%;
@@ -407,6 +410,16 @@ footer .section-links .copyright {
 }
 
 /* Feedback */
+.section-feedback .r-feedback-first,
+.section-feedback .r-feedback-second {
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+}
+
+.section-feedback .map {
+    width: 100%;
+    height: 45vh;
+}
 
 /* Media */
 @media (min-width: 1200px) {

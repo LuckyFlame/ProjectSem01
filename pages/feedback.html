@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper | index.html</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="">
+    <!-- Boxicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Library -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+</head>
+<body class="tag-body" id="feedback">
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="" class="navbar-brand logo">
+                <img src="../images/logo/logo.png" alt="" title="" class="image insert-image">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-new">New</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-covid">Covid-19</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-election">Election</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-healthy">Healthy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-sport">Sport</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-entertainment">Entertainment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-city">City</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link insert-link-feedback">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section -->
+    <section class="section section-feedback">
+        <div class="container">
+            <div class="r-feedback-first">
+                <div class="row">
+                    <div class="col-lg-6 mr-auto">
+                        <h2>Feedback</h2>
+                        <p>This is a feedback page, people can leave comments or rate the website</p>
+                        <ul class="list-unstyled mb-5">
+                            <li class="d-flex mb-2">
+                                <span class="mr-2">
+                                    <i class="bx bx-map-pin"></i>
+                                </span>
+                                <span>
+                                    590 Cach Mang Thang 8, Ward 10, District 3, Ho Chi Minh City, Vietnam
+                                </span>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <span class="mr-2">
+                                    <i class="bx bx-phone"></i>
+                                </span>
+                                <span>
+                                    +84 028 7300 3536
+                                </span>
+                            </li>
+                            <li class="d-flex mb-2">
+                                <span class="mr-2">
+                                    <i class="bx bx-mail-send"></i>
+                                </span>
+                                <span>
+                                    aptech.fpt@fe.edu.vn
+                                </span>
+                            </li>
+                            <li>
+                                <div class="map" id="map"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="mb-5" id="feedbackForm" name="feedbackForm">
+                            <div class="row">
+                                <div class="col-md-12 form-group">
+                                    <label for="fname" class="col-form-label">*First Name</label>
+                                    <input type="text" class="form-control" name="fname">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="lname" class="col-form-label">*Last Name</label>
+                                    <input type="text" class="form-control" name="lname">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="dob" class="col-form-label">*Date of Birth</label>
+                                    <input type="text" class="form-control" name="dob">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="email" class="col-form-label">*Email</label>
+                                    <input type="text" class="form-control" name="email">
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="fname" class="col-form-label">*How did you know about this website</label>
+                                    <div class="d-block">
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" value="" id="cb-newspaper">
+                                            <label class="form-check-label" for="cb-newspaper">Newspaper</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" value="" id="cb-magazine">
+                                            <label class="form-check-label" for="cb-magazine">Magazine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" value="" id="cb-friend">
+                                            <label class="form-check-label" for="cb-friend">Friend</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="checkbox" class="form-check-input" value="" id="cb-website">
+                                            <label class="form-check-label" for="cb-websitee">Website</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <label for="message" class="col-form-label">*Message</label>
+                                    <textarea class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="r-feedback-second">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light">
+      
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-3 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block logo">
+                <img src="../images/logo/logo.png" alt="" title="">
+            </div>
+            <!-- Left -->
+  
+            <!-- Right -->
+            <div class="socials">
+                <a href="" class="me-4 link-secondary">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="bx bxl-google"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+                <a href="" class="me-4 link-secondary">
+                    <i class="bx bxl-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+  
+        <!-- Section: Links  -->
+        <section class="section-links p-3">
+            <div class="">
+                <ul role="list">
+                    <li>
+                        <a href="">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="">Cookie Settings</a>
+                    </li>
+                    <li>
+                        <a href="">Ad Choices</a>
+                    </li>
+                    <li>
+                        <a href="">Accessibility & CC</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Newsletters</a>
+                    </li>
+                    <li>
+                        <a href="">Transcripts</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Copyright -->
+            <div class="copyright">
+                &copy; Copyright 2023 FPT Aptech College. 
+                <a class="text-reset fw-bold" href="https://mdbootstrap.com/">TBLT Newspaper</a>
+            </div>
+            <!-- Copyright -->
+        </section>
+        <!-- Section: Links  -->
+    </footer>
+    <!-- Scroll On Top -->
+    <div class="div-scroll">
+         <button class="button-scroll" id="scrollToTop">
+            <i class="bx bx-arrow-to-top"></i>
+         </button>
+    </div>
+    <!-- Footer -->
+    <!-- jQuery 3.2.1 Slim -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <!-- Popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Javascript -->
+    <script type="text/javascript" src="../js/app.js"></script>
+</body>
+</html>

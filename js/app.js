@@ -35,11 +35,28 @@ function Validate() {
     
 }
 
+function Leaflet() {
+    let map = L.map("map");
+
+    map.setView([10.786853030381092, 106.66624381783144], 14);
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="">FPT Aptech College</a>'
+
+    }).addTo(map);
+
+    L.marker([10.786853030381092, 106.66624381783144]).addTo(map)
+    .bindPopup("FPT Aptech International Training Institute").openPopup();
+}
+
 /* App */
 function App() {
     switch (body) {
         case "index" :
 
+            break;
+        case "feedback" :
+            Leaflet();
             break;
         default : 
 
