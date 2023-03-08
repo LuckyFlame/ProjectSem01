@@ -459,7 +459,7 @@ footer .section-links .copyright {
 
 /* Background */
 
-.section.background .bg-news {
+/* .section.background .bg-news {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -467,7 +467,7 @@ footer .section-links .copyright {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 /* News */
 .section-news .r-news-first,
