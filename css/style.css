@@ -473,8 +473,8 @@ footer .section-links .copyright {
 .section-news .r-news-first,
 .section-news .r-news-second,
 .section-news .r-news-third {
-    padding-block-start: 15px;
-    padding-block-end: 15px;
+    padding-block-start: 30px;
+    padding-block-end: 30px;
 }
 
 .section-news .normal-content .body {
