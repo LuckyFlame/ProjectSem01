@@ -470,11 +470,15 @@ footer .section-links .copyright {
 } */
 
 /* News */
+.section-news .r-news-first {
+    padding-block-start: 35px !important;
+}
+
 .section-news .r-news-first,
 .section-news .r-news-second,
 .section-news .r-news-third {
-    padding-block-start: 30px;
-    padding-block-end: 30px;
+    padding-block-start: 15px;
+    padding-block-end: 15px;
 }
 
 .section-news .normal-content .body {
@@ -539,6 +543,55 @@ footer .section-links .copyright {
     font-weight: 600;
 }
 
+.section-news .feature-section h4 {
+    display: flex;
+    width: 100%;
+}
+
+.section-news .feature-section h4 .double-line {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    margin: 0 0 0 10px;
+    border-top: 3px solid var(--cl-line);
+    border-bottom: 3px solid var(--cl-line);
+}
+
+.section-news .p-thumbnail-video {
+    position: relative;
+}
+
+.section-news .p-thumbnail-video .title-video {
+    position: absolute;
+    max-width: 415px;
+    bottom: -70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #edeeef;
+    padding: 10px 15px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.section-news .r-news-third .row .col-xl-6:nth-child(2),
+.section-news .r-news-third .row .col-xl-6:nth-child(3) {
+    padding-block-end: 45px !important;
+}
+
+.section-news .p-thumbnail-video .title-video a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    height: 1.25;
+}
+
+.section-news .p-thumbnail-video .title-video a .bx {
+    color: var(--cl-red);
+}
+
 /* Media */
 @media (min-width: 1200px) {
     .section-index .r-index-first .row .col-xl-4:nth-child(1),
@@ -567,7 +620,8 @@ footer .section-links .copyright {
     .section-index .r-index-second .row .col-xl-4:nth-child(1),
     .section-index .r-index-second .row .col-xl-4:nth-child(4),
     .section-index .r-index-third .row .col-xl-6:nth-child(2),
-    .section-news .r-news-first .row .col-xl-4:nth-child(1) {
+    .section-news .r-news-first .row .col-xl-4:nth-child(1),
+    .section-news .r-news-second .row > .col-xl-8 {
         padding-left: 0 !important;
     }
 
@@ -578,7 +632,8 @@ footer .section-links .copyright {
     .section-index .r-index-first .row .col-xl-4:nth-child(3),
     .section-index .r-index-second .row .col-xl-4:nth-child(3),
     .section-index .r-index-third .row .col-xl-6:nth-child(3),
-    .section-news .r-news-first .row .col-xl-4:nth-child(3) {
+    .section-news .r-news-first .row .col-xl-4:nth-child(3),
+    .section-news .r-news-second .row > .col-xl-4 {
         padding-right: 0 !important;
     }
 }
