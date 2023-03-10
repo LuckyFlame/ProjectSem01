@@ -1,12 +1,12 @@
 # ProjectSem01
 
-- Batch No: T1.2008.A0
-- Center Name: ACE-HCMC-2-FPT
-- Project Title: News Reporter
-- Frontend: HTML5/CSS/JavaScript
-- Support: /Boxicons/Bootstrap/Leaflet
++ Batch No: T1.2008.A0
++ Center Name: ACE-HCMC-2-FPT
++ Project Title: News Reporter
++ Frontend: HTML5/CSS/JavaScript
++ Support: /Boxicons/Bootstrap/Leaflet
 
-<b> Group 5 </b>
+<h4> Group 5 </h4>
 
 4 Collaborators:
 
