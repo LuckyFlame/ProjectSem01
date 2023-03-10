@@ -662,6 +662,10 @@ footer .section-links .copyright {
     color: var(--cl-red);
 }
 
+.section-city .city-content .tag-design .top img {
+    margin: 0 0 15px 0;
+}
+
 .section-city .side-by-side-content {
     position: relative;
     padding: 4px 0 10px;
