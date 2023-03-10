@@ -5,7 +5,8 @@
 - Project Title: News Reporter
 - Frontend: HTML5/CSS/JavaScript
 - Support: /Boxicons/Bootstrap/Leaflet
-Group 5
+
+<b> Group 5 </b>
 
 4 Collaborators:
 
