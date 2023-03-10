@@ -23,17 +23,9 @@ buttonScroll.addEventListener("click", () => {
 
 /* Other */
 
-function City() {
-
-}
-
-function Feedback() {
-
-}
-
-function Validate() {
+// function Validate() {
     
-}
+// }
 
 function Leaflet() {
     let map = L.map("map");
@@ -52,11 +44,9 @@ function Leaflet() {
 /* App */
 function App() {
     switch (body) {
-        case "index" :
-
-            break;
         case "feedback" :
             Leaflet();
+            Validate();
             break;
         default : 
 
