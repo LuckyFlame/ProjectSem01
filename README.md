@@ -18,7 +18,7 @@ __________Group 5__________
 _____________________________
 
 - Document: FPT ACADEMY INTERNATIONAL.docx
-- Published:
+- Published: https://luckyflame.github.io/ProjectSem01/
 
 *Note: it's refreshed from the old one so there will be some changes, but the overall goal remains the same.
 
